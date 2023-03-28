@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    flex-direction: row;
+    flex-flow: wrap;
+    background-color: black;
+}
+
+img {
+    height: 30vmin;
+
+}
+
+.portPic img {
+    height: 100px;
+}
+
+.projectPic img {
+    height: 50px;
+}
