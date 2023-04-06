@@ -11,3 +11,27 @@ body {
     margin: auto;
     width: 100%;
 }
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+.item-size {
+    height: 600px;
+    width: 600px !important;
+}
+
+.carousel-img {
+    display: flex;
+    overflow: hidden;
+}
+
+.child-img {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
+}
