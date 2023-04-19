@@ -77,14 +77,29 @@ body {
     transform: scale(1.5); 
 }
 
-.aboutMe {
-    display: flex;
-}
-
 .skillsSection {
     background-color: rgb(206, 224, 248);
+    width: 100%;
 }
 
 .blackjackSection {
     background-color: rgb(206, 224, 248);
+    width: 100%;
+}
+
+.profilePic {
+    height: 30vmax;
+    padding-right: 10vmin;
+    min-height: 300px;
+}
+
+.aboutMe {
+    display: flex;
+    justify-items: center;
+    padding-left: 20vmin;
+    padding-right: 20vmin;
+}
+
+#aboutMeP {
+    font-size: large;
 }
