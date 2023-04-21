@@ -96,6 +96,7 @@ body {
 .aboutMe {
     display: flex;
     justify-items: center;
+    justify-content: center;
     padding-left: 20vmin;
     padding-right: 20vmin;
     max-width: 100%;
