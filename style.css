@@ -98,6 +98,7 @@ body {
     justify-items: center;
     padding-left: 20vmin;
     padding-right: 20vmin;
+    max-width: 100%;
 }
 
 #aboutMeP {
