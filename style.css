@@ -200,11 +200,11 @@ body {
 }
 
 
-.sectionSelector {
+/* .sectionSelector {
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
   
   .sectionSelector.show {
     opacity: 1;
-  }
+  }  */
