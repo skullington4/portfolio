@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -15,29 +19,7 @@ body {
     width: 100%;
 }
 
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
-}
 
-
-.item-size {
-    height: 600px;
-    width: 600px !important;
-}
-
-.carousel-img {
-    display: flex;
-    overflow: hidden;
-}
-
-.child-img {
-    max-width: inherit;
-    max-height: inherit;
-    height: inherit;
-    width: inherit;
-    object-fit: contain;
-}
 
 .links {
     -webkit-border-radius: 4px;
@@ -50,7 +32,7 @@ body {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     background: #2f59cc;
     color: #FFF;
-    padding: 8px 12px;
+    padding: 1.5vmin 2vmin;
     text-decoration: none;
     justify-content: center;
     transition: all .2s ease-in-out; 
@@ -89,9 +71,10 @@ body {
 }
 
 .profilePic {
-    width: 30vmin;
-    height: 30vmin;
+    width: 40vmin;
+    height: 40vmin;
     border-radius: 50%;
+    margin: 3vmin;
     border: 2px solid blue;
     animation-name: morph;
     animation-duration: 5s;
@@ -208,3 +191,44 @@ body {
   .sectionSelector.show {
     opacity: 1;
   }  */
+
+
+
+  @media (max-width: 900px) {
+    
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        align-items: center;
+        justify-items: center; 
+    }
+
+    .fullProject {
+        flex-direction: column;
+      }
+      
+      .projectImages {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vmin;
+      }
+      
+      .projectDescription {
+        font-size: 3vmin;
+        margin-bottom: 2vmin;
+      }
+      
+      .projectLinks {
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .links {
+        margin-bottom: 2vmin;
+      }
+
+      #section2 .fullProject {
+        flex-direction: column-reverse;
+      }
+  }
