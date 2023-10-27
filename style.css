@@ -117,8 +117,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vmax;
-    padding: 3vmax;
     height: 75vh;
 }
 
@@ -194,7 +192,7 @@ body {
 
 
 
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     
     .skills {
         display: grid;
