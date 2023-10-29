@@ -74,7 +74,7 @@ body {
     height: 40vmin;
     border-radius: 50%;
     margin: 3vmin;
-    border: 2px solid blue;
+    border: 2px solid darkgray;
     animation-name: morph;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -189,7 +189,17 @@ body {
     opacity: 1;
   } 
 
+  .portImages {
+    height: 50vmin;
+    width: 40vmin;
+    border-radius: 3%;
+}
 
+.landscapeImages {
+  height: 40vmin;
+  width: 50vmin;
+  border-radius: 3%;
+}
 
   @media (max-width: 1000px) {
     
