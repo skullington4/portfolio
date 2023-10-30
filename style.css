@@ -180,32 +180,10 @@ body {
 }
 
 
-.sectionSelector {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-  }
-  
-  .sectionSelector.show {
-    opacity: 1;
-  } 
-
-
-  .sliderSelector {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-  }
-  
-  .sliderSelector.show {
-    opacity: 1;
-  } 
-
-
-
-
-  .portImages {
-    height: 50vmin;
-    width: 40vmin;
-    border-radius: 3%;
+.portImages {
+  height: 50vmin;
+  width: 40vmin;
+  border-radius: 3%;
 }
 
 .landscapeImages {
@@ -213,6 +191,74 @@ body {
   width: 50vmin;
   border-radius: 3%;
 }
+
+.sectionSelector {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.sectionSelector.show {
+  opacity: 1;
+} 
+
+
+
+.sliderSelector {
+  position: relative;
+  overflow: hidden;
+}
+
+.sliderSelector.show {
+  transform: translateX(0%);
+}
+
+.sliderSelector .slideSection {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 3vmax;
+  box-sizing: border-box;
+}
+
+.sliderSelector .projectLeftContainer {
+  position: relative;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  transition: right 1s ease-in-out;
+}
+
+.sliderSelector.show .projectLeftContainer {
+  right: 0;
+}
+
+
+.sliderSelector .projectRightContainer {
+  position: relative;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: left 1s ease-in-out;
+}
+
+.sliderSelector.show .projectRightContainer {
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media (max-width: 1000px) {
     
@@ -252,8 +298,24 @@ body {
         flex-direction: column-reverse;
       }
 
+      #section3 .fullProject {
+        flex-direction: column-reverse;
+      }
+
       .profilePic {
         width: 60vmin;
         height: 60vmin;
       }
+
+      .portImages {
+        height: 70vmin;
+        width: 60vmin;
+        border-radius: 3%;
+    }
+    
+    .landscapeImages {
+      height: 60vmin;
+      width: 70vmin;
+      border-radius: 3%;
+    }
   }
