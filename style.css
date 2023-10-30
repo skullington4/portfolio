@@ -74,7 +74,7 @@ body {
     height: 40vmin;
     border-radius: 50%;
     margin: 3vmin;
-    border: 2px solid darkgray;
+    border: 2px solid black;
     animation-name: morph;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -188,6 +188,19 @@ body {
   .sectionSelector.show {
     opacity: 1;
   } 
+
+
+  .sliderSelector {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .sliderSelector.show {
+    opacity: 1;
+  } 
+
+
+
 
   .portImages {
     height: 50vmin;
